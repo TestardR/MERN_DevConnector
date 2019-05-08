@@ -165,7 +165,7 @@ router.put('/unlike/:id', auth, async (req, res) => {
   }
 });
 
-/ @route    POST api/posts/comment/:id
+// @route    POST api/posts/comment/:id
 // @desc     Comment on a post
 // @access   Private
 router.post(
@@ -244,6 +244,5 @@ router.delete('/comment/:id/:comment_id', auth, async (req, res) => {
     res.status(500).send('Server Error');
   }
 });
-
 
 module.exports = router;
